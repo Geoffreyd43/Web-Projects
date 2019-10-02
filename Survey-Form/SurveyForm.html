@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="content">
+      <div id="header">
+        <h1 id="title">Cool Survey Form</h1>
+        <p id="description">Please be awesome and help us out!!!</p>
+      </div>
+    <form id="survey-form">
+      <div>
+        <label id="name-label">* Name: </label>
+        <input class="right-tab input-field" id="name" placeholder="John Doe..." required>
+      </div>
+      <div>
+        <label id="email-label">* Email:</label>
+        <input id="email" class="right-tab input-field" type="email" placeholder="your@email.com" required>
+      </div>
+      <div>
+        <label id="number-label">Give me a number, any number (between -1 and 52): </label>
+        <input id="number" class="right-tab input-field" type="number" placeholder="17" min="-1" max="52" required>
+      </div>
+      <div>
+        <label>If I walked into the house with 2 oranges in my hand and my mom is playing a card game at midnight, what is my dog's name?</label>
+        <select id="dropdown" class="right-tab input-field">
+          <option value="Brownie">Brownie</option>
+          <option value="Teddy">Teddy</option>
+          <option value="Big Dawg">Big Dawg</option>
+          <option value="The Dog">The Dog</option>
+        </select>
+      </div>
+      <div>
+        <label>What is the radio saying?</label>
+        <ul class="right-tab">
+          <li><input type="radio" name="rad" value="brandy">Brandy, you're a fine girl!</li>
+          <li><input type="radio" name="rad" value="football">AND HE'S AT THE 20, 10, TOUCHDOWN TOUCHDOWN TOUCHDOWN</li>
+          <li><input type="radio" name="rad" value="white-noise">*white noise*</li>
+        </ul>
+      </div>
+      <div>
+        <label>What is cooler than being cool?</label>
+        <ul class="right-tab">
+          <li><input type="checkbox" name="check" value="ice-cold">Ice Cold!</li>
+          <li><input type="checkbox" name="check" value="me">I am!!!</li>
+          <li><input type="checkbox" name="check" value="alright">Alright alright alright alright...</li>
+        </ul>
+      </div>
+      <div>
+        <label>Tell us any other cool things we might have missed!</label>
+        <textarea class="right-tab input-field" placeholder="Feedback goes here!"></textarea>
+      </div>
+      <input id="submit" type="submit">
+    </form>
+    </div>
+  </body>
+</html>
